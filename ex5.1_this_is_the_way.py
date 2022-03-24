@@ -8,9 +8,10 @@ def print_deep_folder():
     """
     folder_path = input("Insert the path to the folder:")
     directory_list = os.listdir(folder_path)
-    deep_files = [f for f in directory_list if f.startswith("deep")]
+    deep_files = [file for file in directory_list if file.startswith("deep")]
     print(deep_files)
 
 
 if __name__ == '__main__':
     print_deep_folder()
+
