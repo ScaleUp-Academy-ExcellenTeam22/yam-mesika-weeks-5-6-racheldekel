@@ -1,10 +1,14 @@
-#function that calculate the price for all the integers
+
 def get_recipe_price(prices=dict, optionals=list(), **quantity):
-    sum_price = 0
-    for key in prices.keys():
-            if key not in optionals:
-                sum_price += (quantity[key] / 100 * prices[key])
-    return sum_price
+    """
+    function that calculate the price for all the integers
+    :param prices:
+    :param optionals:
+    :param quantity:
+    :return:
+    """
+    return sum(quantity[key] / 100 * prices[key]
+               for key in prices.keys() if key not in optionals)
 
 
 if __name__ == '__main__':
