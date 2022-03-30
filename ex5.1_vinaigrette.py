@@ -20,7 +20,7 @@ def print_date():
 
 def get_date(string):
     """
-    return the date
+    return the date - to check if monday
     :param string: string for the output
     :return: print the date
     """
