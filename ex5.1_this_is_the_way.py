@@ -14,4 +14,3 @@ def print_deep_folder():
 
 if __name__ == '__main__':
     print_deep_folder()
-
